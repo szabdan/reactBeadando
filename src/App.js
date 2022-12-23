@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import Header from './components/Layout/Header/Header';
+import Footer from './components/Layout/Footer/Footer';
+import { Routes, Route } from "react-router";
+//import AuthContext from './store/auth-context';
+//import { useContext } from 'react';
+import PizzaPage from './pages/PizzaPage';
+import HomePage from './pages/HomePage';
+import BorokPage from './pages/BorokPage';
+import KoktelokPage from './pages/KoktelokPage';
+
 import './App.css';
 
 function App() {
+  //const ctx = useContext(AuthContext);
+  //const loggedIn = ctx.isLoggedIn;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        {/*loggedIn && <Route path='/profile' element={<ProfilePage />}/>*/}
+        <Route path='/pizza' element={<PizzaPage />}/>
+        <Route path='/borok' element={<BorokPage />}/>
+        <Route path='/koktelok' element={<KoktelokPage />}/>
+        <Route path='*' element={<HomePage />} />
+      </Routes>
+
+      <Footer />
     </div>
   );
 }
