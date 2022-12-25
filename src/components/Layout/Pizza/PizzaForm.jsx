@@ -1,16 +1,17 @@
-import ProductItem from './ProductItem';
-import classes from './PizzaForm.module.css';
+import ProductItem from '../Product/ProductItem';
 import {  useEffect, useState } from 'react';
+
+import classes from './PizzaForm.module.css';
 
 const dummy_pizza = [
     {
-        id: 'p1',
+        id: 'pp1',
         price: 6,
         name: 'Magyaros Pizza',
         description: 'paradicsom szósz, kolbász, hagyma, erős paprika, sajt',
     },
     {
-        id: 'p2',
+        id: 'pp2',
         price: 5,
         name: 'Gombás-sonkás pizza',
         description: 'paradicsom szósz, sonka, hagyma, gomba, kukorica, sajt',

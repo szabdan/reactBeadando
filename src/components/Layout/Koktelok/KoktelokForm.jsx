@@ -1,16 +1,17 @@
-import ProductItem from './ProductItem';
-import classes from './KoktelokForm.module.css';
+import ProductItem from '../Product/ProductItem';
 import {  useEffect, useState } from 'react';
+
+import classes from './KoktelokForm.module.css';
 
 const dummy_koktelok= [
     {
-        id: "p1",
+        id: "kp1",
         price: 12,
         name: "Sex on the beach",
         description: "hozzávalók"
     },
 	{
-        id: "p2",
+        id: "kp2",
         price: 16,
         name: "Manhattan",
         description: "hozzávalók"

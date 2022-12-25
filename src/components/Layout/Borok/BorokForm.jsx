@@ -1,16 +1,17 @@
-import ProductItem from './ProductItem';
-import classes from './BorokForm.module.css';
+import ProductItem from '../Product/ProductItem';
 import {  useEffect, useState } from 'react';
+
+import classes from './BorokForm.module.css';
 
 const dummy_borok = [
     {
-        id: 'p1',
+        id: 'bp1',
         price: 6,
         name: 'Kékfrankos',
         description: 'Sopron',
     },
     {
-        id: 'p2',
+        id: 'bp2',
         price: 5,
         name: 'Merlot',
         description: 'Eger',

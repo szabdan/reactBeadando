@@ -20,7 +20,7 @@ const Offers = (props) => {
                 <Link to='/borok'>
                     <Card>
                         <div className={classes.bal}>
-                            <img src={require("../../../assets/offers/wine.png")} alt="Pizza" />
+                            <img src={require("../../../assets/offers/wine.png")} alt="Borok" />
                             <p>Borok</p>
                         </div>
                     </Card>
@@ -28,7 +28,7 @@ const Offers = (props) => {
                 <Link to='/koktelok'>
                     <Card>
                         <div className={classes.bal}>
-                            <img src={require("../../../assets/offers/drinks.png")} alt="Pizza" />
+                            <img src={require("../../../assets/offers/drinks.png")} alt="Koktélok" />
                             <p>Koktélok</p>
                         </div>
                     </Card>

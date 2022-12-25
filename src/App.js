@@ -19,7 +19,6 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />}/>
-        {/*loggedIn && <Route path='/profile' element={<ProfilePage />}/>*/}
         <Route path='/pizza' element={<PizzaPage />}/>
         <Route path='/borok' element={<BorokPage />}/>
         <Route path='/koktelok' element={<KoktelokPage />}/>

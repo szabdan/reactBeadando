@@ -1,7 +1,8 @@
 import { useState, Fragment, useContext } from "react";
 import LoginButton from "../Auth/LoginButton";
-import AuthContext from '../../../store/auth-context';
+import AuthContext from '../../../store/AuthContext/auth-context';
 import {Link} from 'react-router-dom';
+import CartButton from '../../Cart/CartButton';
 
 import classes from "./HeaderCartButton.module.css";
 
@@ -16,6 +17,10 @@ const HeaderCartButton = (props) => {
             {
                 login &&
                 <LoginButton onClick={loginHandler} />
+            }
+            {
+                ctx.isLoggedIn &&
+                    <CartButton />
             }
             {
                 ctx.isLoggedIn &&
