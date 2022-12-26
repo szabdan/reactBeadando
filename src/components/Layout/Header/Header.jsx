@@ -1,23 +1,25 @@
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useContext } from "react";
 import HeaderCartButton from "./HeaderCartButton";
 import AuthContext from '../../../store/AuthContext/auth-context';
 import UserProfile from "../Profile/LoginMenu";
 import { Link } from "react-router-dom";
 import CartForm from "../../Cart/CartForm"
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
+import { uiActions } from '../../../store/ItemRedux/ui-slice';
 
 import classes from "./Header.module.css";
 
 const Header = (props) => {
+    const dispatch = useDispatch();
     const ctx = useContext(AuthContext);
     const loggedIn = ctx.isLoggedIn;
     const showCart = useSelector(state => state.ui.carIsVisible);
-    const [isShowCart, setIsShowCart] = useState(showCart);
 
-    const ShowCartHandler = () =>{
-        setIsShowCart(!isShowCart);
-        console.log(isShowCart);
-    }
+
+    const toggleCartHandler = () => {
+        dispatch(uiActions.toggle());
+      }
+
 
     return (
         <Fragment>
@@ -29,7 +31,7 @@ const Header = (props) => {
             <div className={classes['main-image']} >
                 <h1 className={classes.text}>„Fai pace con il tuo pasato cosi non rovinerá il tuo presente”</h1>
             </div>
-            {isShowCart && <CartForm onClick={ShowCartHandler}/>}
+            {showCart && <CartForm onClick={toggleCartHandler}/>}
         </Fragment>
     );
 
