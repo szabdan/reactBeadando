@@ -2,6 +2,9 @@
 import Card from "../../UI/Card";
 import { Link } from "react-router-dom";
 import classes from "./Box.module.css";
+import pizza from "../../../assets/offers/pizza.png";
+import wine from "../../../assets/offers/wine.png";
+import drinks from "../../../assets/offers/drinks.png";
 
 const Offers = (props) => {
 
@@ -12,7 +15,7 @@ const Offers = (props) => {
                 <Link to='/pizza'>
                     <Card>
                         <div className={classes.bal}>
-                            <img src={require("../../../assets/offers/pizza.png")} alt="Pizza" />
+                            <img src={pizza} alt="Pizza" />
                             <p>Pizza</p>
                         </div>
                     </Card>
@@ -20,7 +23,7 @@ const Offers = (props) => {
                 <Link to='/borok'>
                     <Card>
                         <div className={classes.bal}>
-                            <img src={require("../../../assets/offers/wine.png")} alt="Borok" />
+                            <img src={wine} alt="Borok" />
                             <p>Borok</p>
                         </div>
                     </Card>
@@ -28,7 +31,7 @@ const Offers = (props) => {
                 <Link to='/koktelok'>
                     <Card>
                         <div className={classes.bal}>
-                            <img src={require("../../../assets/offers/drinks.png")} alt="Koktélok" />
+                            <img src={drinks} alt="Koktélok" />
                             <p>Koktélok</p>
                         </div>
                     </Card>

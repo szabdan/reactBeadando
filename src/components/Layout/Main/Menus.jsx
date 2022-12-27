@@ -1,5 +1,6 @@
 import Card from "../../UI/Card";
 import classes from "./Box.module.css";
+import menu from "../../../assets/offers/menu.jpg";
 const Menus = (props) => {
 
     return (
@@ -8,12 +9,12 @@ const Menus = (props) => {
                 <h1>Alacarte</h1>
                 <Card>
                     <div className={classes.jobb}>
-                        <img src={require("../../../assets/offers/menu.jpg")} alt="Menu" />
+                        <img src={menu} alt="Menu" />
                     </div>
                 </Card>
                 <Card>
                     <div className={classes.jobb}>
-                        <img src={require("../../../assets/offers/menu.jpg")} alt="Menu" />
+                        <img src={menu} alt="Menu" />
                     </div>
                 </Card>
             </div>

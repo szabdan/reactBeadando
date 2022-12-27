@@ -7,12 +7,12 @@
 
 .gmap_canvas {
     overflow: hidden;
-    background: none !important;
+    background: none;
     width: 400px;
     height: 400px;
 }
 
 .gmap_iframe {
-    width: 400px !important;
-    height: 400px !important;
+    width: 400px;
+    height: 400px;
 }

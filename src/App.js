@@ -7,8 +7,11 @@ import PizzaPage from './pages/PizzaPage';
 import HomePage from './pages/HomePage';
 import BorokPage from './pages/BorokPage';
 import KoktelokPage from './pages/KoktelokPage';
+import React from 'react';
 
 import './App.css';
+
+//const PizzaPage = React.lazy(()=>import('./pages/PizzaPage'));
 
 function App() {
   //const ctx = useContext(AuthContext);

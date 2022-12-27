@@ -6,7 +6,7 @@ import classes from "./Opportunities.module.css";
 const Connection = () =>{
     return (
         <div className={classes.opportunities}>
-            <Map className={classes.cart}/>
+            <Map className={classes.cart}/>*/
             <ConnectionItem className={classes.cart}/>
         </div>
     );
